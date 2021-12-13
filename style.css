@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./image/img.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-position: center;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    font-weight: 200;
+    font-style: oblique;
+    letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    color: chartreuse ;
+    border: blue solid 2px;
+    border-radius: 100px;
+    box-shadow: 2px 3px 3px 8px yellowgreen;    /*(lefttoright toptodown glow/solid width)*/
+    margin: 30px 20px 15px 20px;                  /*toptoleft clockwise*/
+}
+
+
+
+
+.div{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 100px 0px 20px 0px;
+}
+.div1{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 10px 0px 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.div1>p{
+    border: slateblue solid;
+    margin: 20px 10px 10px 10px;
+    width: 200px;
+    font-size: 45px;
+    text-align: center;
+    border-radius: 70px;
+    padding: 15px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 60px;
+    font-style: italic;
+    letter-spacing: -1px;
+    color: rgb(61, 130, 194);
+    box-shadow: 4px 2px 4px 10px royalblue;
+    background-color: black;
+}
+
+
+
+.div2{
+    display: flex;
+    justify-content: center;
+    margin: 180px 0px 10px 0px;
+    flex-wrap: wrap;
+}
+.div2>button{
+    margin: 10px 5% 10px 5%;
+    font-size: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 20pt;
+    padding: 5px;
+    background-color: #000;
+    width: 250px;
+    text-align: center;
+    border: 5px solid #15f4ee;
+    color: #15f4ee;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .div1>p{
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    h1{
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    h1{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 270px) {
+    .div2>button{
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 240px) {
+    h1{
+        font-size: 11px;
+    }
+}
